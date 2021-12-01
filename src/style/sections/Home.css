@@ -1,0 +1,9 @@
+.Home-Section{
+    max-width: 120rem;
+    max-height: 100vh;
+    width: 100%;
+    height: 100vh;
+    background-image: url("../../Image/test_2.png");
+    background-size: cover;
+    
+}
