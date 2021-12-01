@@ -1,27 +1,35 @@
 import { Container, Row, Col } from 'react-bootstrap'
 import '../style/components/SideNav.css'
+import { FaHome, FaInfo, FaCertificate} from 'react-icons/fa'
+import { GiSkills} from 'react-icons/gi'
+import { AiFillProject} from 'react-icons/ai'
 
 function SideNav() {
     const navContent = [
         {
             title: "Home",
-            scrollTo: "/"
+            scrollTo: "/",
+            icon: <FaHome className="dot-icon" />
         },
         {
             title: "About",
-            scrollTo: "/"
+            scrollTo: "/",
+            icon: <FaInfo className="dot-icon" />
         },
         {
             title: "Skill",
-            scrollTo: "/"
+            scrollTo: "/",
+            icon: <GiSkills className="dot-icon" />
         },
         {
             title: "Certificate",
-            scrollTo: "/"
+            scrollTo: "/",
+            icon: <FaCertificate className="dot-icon"/>
         },
         {
             title: "Project",
-            scrollTo: "/"
+            scrollTo: "/",
+            icon: <AiFillProject className="dot-icon" />
         }
     ]
     return (
@@ -33,7 +41,10 @@ function SideNav() {
                             {
                                 navContent.map((value, index) => {
                                     return (
-                                        <li className="dot-handler" key={index}><a className="nav-content" href={value.scrollTo}>{value.title}</a></li>
+                                        <Row>
+                                            <Col ><a className="dot-handler" key={index}>{value.icon}</a></Col>
+                                            <Col ><li className="nav-content" href={value.scrollTo}>{value.title}</li> </Col>
+                                        </Row>
                                     )
                                 })
                             }
