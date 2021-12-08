@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import { AspectRatio } from 'react-aspect-ratio';
 import { Container, Row, Col } from 'react-bootstrap'
 import '../style/components/SideNav.css'
 import { FaHome, FaInfo, FaCertificate } from 'react-icons/fa'

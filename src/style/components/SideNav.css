@@ -24,7 +24,7 @@
 
 .nav-area{
     position: absolute;
-    width: 160px;
+    width: 9.375vw;
     height: 100vh;
     background-color: var(--color-fourth);
 }
@@ -76,10 +76,10 @@ ul{
 
 .toggleWrapper {
     position: absolute;
-    top: 87%;
-    left: 50%;
+    top: 48.9375vw;
+    left: 4.6875vw;
     overflow: hidden;
-    padding: 0 200px;
+    padding: 0 10.4166666vw;
     transform: translate3d(-50%, -50%, 0);
 }
 
@@ -92,36 +92,20 @@ ul{
     cursor: pointer;
     display: inline-block;
     position: relative;
-    width: 90px;
-    height: 50px;
+    width: 4.688vw;
+    height: 2.6041666vw;
     background-color: #83D8FF;
     border-radius: 84px;
     transition: background-color 200ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
 }
 
-.toggle:before {
-    position: absolute;
-    left: -50px;
-    top: 15px;
-    font-size: 18px;
-}
-
-.toggle:after {
-    position: absolute;
-    right: -48px;
-    top: 15px;
-    font-size: 18px;
-    color: #749ED7;
-}
-  
 .toggle__handler {
     display: inline-block;
     position: relative;
     z-index: 1;
-    top: 3px;
-    left: 3px;
-    width: 44px;
-    height: 44px;
+    margin: 0.15625vw;
+    width: 2.29166666vw;
+    height: 2.29166666vw;
     background-color: #FFCF96;
     border-radius: 50px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
@@ -138,24 +122,24 @@ ul{
 }
 
 .toggle__handler .crater--1 {
-    top: 18px;
-    left: 10px;
-    width: 4px;
-    height: 4px;
+    top: 0.9375vw;
+    left: 0.5208333333vw;
+    width: 0.208333333vw;
+    height: 0.208333333vw;
 }
 
 .toggle__handler .crater--2 {
-    top: 28px;
-    left: 22px;
-    width: 6px;
-    height: 6px;
+    top: 1.458333333vw;
+    left:1.1458333333vw;
+    width: 0.3125vw;
+    height: 0.3125vw;
 }
 
 .toggle__handler .crater--3 {
-    top: 10px;
-    left: 25px;
-    width: 8px;
-    height: 8px;
+    top: 0.520833333333vw;
+    left: 1.30208333333vw;
+    width: 0.41666666666vw;
+    height: 0.41666666666vw;
 }
   
 .star {
@@ -166,54 +150,54 @@ ul{
 }
   
 .star--1 {
-    top: 10px;
-    left: 35px;
+    top: 0.520833333vw;
+    left: 1.82291666666vw;
     z-index: 0;
-    width: 30px;
-    height: 3px;
+    width: 1.5625vw;
+    height: 0.15625vw;
 }
   
 .star--2 {
-    top: 18px;
-    left: 28px;
+    top: 0.9375vw;
+    left: 1.4583333333vw;
     z-index: 1;
-    width: 30px;
-    height: 3px;
+    width: 1.5625vw;
+    height: 0.15625vw;
 }
   
 .star--3 {
-    top: 27px;
-    left: 40px;
+    top: 1.40625vw;
+    left: 2.0833333333333vw;
     z-index: 0;
-    width: 30px;
-    height: 3px;
+    width: 1.5625vw;
+    height: 0.15625vw;
 }
   
 .star--4 {
-    top: 16px;
-    left: 11px;
+    top: 0.83333333vw;
+    left: 0.5729166666vw;
     z-index: 0;
-    width: 2px;
-    height: 2px;
-    transform: translate3d(3px, 0, 0);
+    width: 0.104166666666vw;
+    height: 0.104166666666vw;
+    transform: translate3d(0.15625vw, 0, 0);
 }
   
 .star--5 {
-    top: 32px;
-    left: 17px;
+    top: 1.66666666667vw;
+    left: 0.88541666666vw;
     z-index: 0;
-    width: 3px;
-    height: 3px;
-    transform: translate3d(3px, 0, 0);
+    width: 0.15625vw;
+    height: 0.15625vw;
+    transform: translate3d(0.15625vw, 0, 0);
 }
   
 .star--6 {
-    top: 36px;
-    left: 28px;
+    top: 1.875vw;
+    left: 1.4583333333vw;
     z-index: 0;
-    width: 2px;
-    height: 2px;
-    transform: translate3d(3px, 0, 0);
+    width: 0.104166666666vw;
+    height: 0.104166666666vw;
+    transform: translate3d(0.15625vw, 0, 0);
 }
   
 input:checked + .toggle {
@@ -230,7 +214,7 @@ input:checked + .toggle:after {
 
 input:checked + .toggle .toggle__handler {
     background-color: #FFE5B5;
-    transform: translate3d(40px, 0, 0) rotate(0);
+    transform: translate3d(2.08333333333vw, 0, 0) rotate(0);
 }
 
 input:checked + .toggle .toggle__handler .crater {
@@ -238,43 +222,44 @@ input:checked + .toggle .toggle__handler .crater {
 }
 
 @media only screen and (max-width: 768px) {
-    .nav-area{
-      width: 768px;
-      height: 160px;
-    }
-    .hover-me{
-      display: inline-block;
-    }
-    .hover-me:hover .nav-content{
-      opacity: 0;
-    }
-    .nav-content{
-      display: none;
-    }
-    .dot-handler{
-      position: relative;
-      width: 13vw;
-      background-color: var(--color-third);
-      list-style-type: none;
-      padding: 3.13vw 3.13vw 3.13vw 0;
-      margin: 0 0 0 6.26vw;
-      border-radius: 100px;
-      z-index: 2;
-      top: 5.5rem;
-  }
-  .dot-icon{
-      position: absolute;
-      width: 3rem;
-      height: 3rem;
-      color: var(--font-color);
-      margin-left: 1.6rem;
-  }
-  .toggleWrapper {
+.nav-area{
+    width: 100vw;
+    height: 20.18229166666667vw;
+}
+.hover-me{
+    display: inline-block;
+}
+.hover-me:hover .nav-content{
+    opacity: 0;
+}
+.nav-content{
+    display: none;
+}
+.dot-handler{
+    position: relative;
+    width: 10vw;
+    height: 10vw;
+    background-color: var(--color-third);
+    list-style-type: none;
+    padding: 3.13vw 3.13vw 3.13vw 0;
+    margin: 1.5vw 0 0 5vw;
+    border-radius: 100px;
+    z-index: 2;
+    top: 11.45833333333333vw;
+}
+.dot-icon{
     position: absolute;
-    top: 30%;
-    left: 87%;
+    width: 4vw;
+    height: 4vw;
+    color: var(--font-color);
+    margin-left: 3vw;
+}
+.toggleWrapper {
+    position: absolute;
+    top: 10.09114583333333vw;
+    left: 87vw;
     overflow: hidden;
-    padding: 0 200px;
+    padding: 0 20.8333333vw;
     transform: translate3d(-50%, -50%, 0);
 }
 
@@ -287,10 +272,132 @@ input:checked + .toggle .toggle__handler .crater {
     cursor: pointer;
     display: inline-block;
     position: relative;
-    width: 90px;
-    height: 50px;
+    width: 9.375vw;
+    height: 5.2083333333vw;
     background-color: #83D8FF;
     border-radius: 84px;
     transition: background-color 200ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.toggle__handler {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    margin: 0.3125vw;
+    width: 4.583333333vw;
+    height: 4.58333333vw;
+    background-color: #FFCF96;
+    border-radius: 50px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    transition: all 400ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transform: rotate(-45deg);
+}
+
+.toggle__handler .crater {
+    position: absolute;
+    background-color: #E8CDA5;
+    opacity: 0;
+    transition: opacity 200ms ease-in-out;
+    border-radius: 100%;
+}
+
+.toggle__handler .crater--1 {
+    top: 1.875vw;
+    left: 1.0416666666vw;
+    width: 0.4166666666vw;
+    height: 0.4166666666vw;
+}
+
+.toggle__handler .crater--2 {
+    top: 2.916666666vw;
+    left: 2.2916666666vw;
+    width: 0.625vw;
+    height: 0.625vw;
+}
+
+.toggle__handler .crater--3 {
+    top: 1.0416666666vw;
+    left: 2.60416666666vw;
+    width: 0.833333333vw;
+    height: 0.833333333vw;
+}
+  
+.star {
+    position: absolute;
+    background-color: #ffffff;
+    transition: all 300ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    border-radius: 50%;
+}
+  
+.star--1 {
+    top: 1.0416666666vw;
+    left: 3.64583333333vw;
+    z-index: 0;
+    width: 2.6041666vw;
+    height: 0.2604166vw;
+}
+  
+.star--2 {
+    top: 1.875vw;
+    left: 2.9166666666vw;
+    z-index: 1;
+    width: 2.6041666vw;
+    height: 0.2604166vw;
+}
+  
+.star--3 {
+    top: 2.8125vw;
+    left: 4.1666666666vw;
+    z-index: 0;
+    width: 2.6041666vw;
+    height: 0.2604166vw;
+}
+  
+.star--4 {
+    top: 1.666666666vw;
+    left: 1.1458333333vw;
+    z-index: 0;
+    width: 0.20833333vw;
+    height: 0.20833333vw;
+    transform: translate3d(0.3125vw, 0, 0);
+}
+  
+.star--5 {
+    top: 3.3333333333vw;
+    left: 1.7708333333vw;
+    z-index: 0;
+    width: 0.3125vw;
+    height: 0.3125vw;
+    transform: translate3d(0.3125vw, 0, 0);
+}
+  
+.star--6 {
+    top: 3.75vw;
+    left: 2.916666666vw;
+    z-index: 0;
+    width: 0.20833333vw;
+    height: 0.20833333vw;
+    transform: translate3d(0.3125vw, 0, 0);
+}
+  
+input:checked + .toggle {
+    background-color: #749DD6;
+}
+
+input:checked + .toggle:before {
+    color: #749ED7;
+}
+
+input:checked + .toggle:after {
+    color: #ffffff;
+}
+
+input:checked + .toggle .toggle__handler {
+    background-color: #FFE5B5;
+    transform: translate3d(4.166666666vw, 0, 0) rotate(0);
+}
+
+input:checked + .toggle .toggle__handler .crater {
+    opacity: 1;
 }
 }
