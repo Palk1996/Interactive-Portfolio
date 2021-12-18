@@ -1,0 +1,12 @@
+.present-section{
+    max-height: 100vh;
+    max-width: 120rem;
+    width: 120rem;
+    height: 100vh;
+    padding: 100px;
+}
+.wrap-present-content{
+    text-align: center;
+    margin-bottom: 20rem;
+    padding: 0px 200px 0px 200px;
+}

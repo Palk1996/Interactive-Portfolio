@@ -4,7 +4,7 @@ import '../style/components/SideNav.css'
 import { FaHome, FaInfo, FaCertificate } from 'react-icons/fa'
 import { GiSkills } from 'react-icons/gi'
 import { AiFillProject } from 'react-icons/ai'
-
+import Present from '../sections/Present'
 function SideNav() {
     const class_name = "toLightMode"
     const [theme, setTheme] = useState(true)
@@ -41,6 +41,7 @@ function SideNav() {
         }
     ]
     return (
+        <div className={theme ? "wrap-site bg-light" : "wrap-site bg-dark"}>
         <div className="wrap-nav">
             <Container>
                 <Col className={theme ? "nav-area theme-light" : "nav-area theme-dark"}>
@@ -75,7 +76,10 @@ function SideNav() {
                         </label>
                     </div>
                 </Col>
+                <Present />
             </Container>
+
+        </div>
         </div>
     );
 }

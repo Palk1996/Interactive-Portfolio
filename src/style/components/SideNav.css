@@ -6,6 +6,22 @@
     width: 15vw;
 }
 
+.wrap-site{
+    max-height: 100%;
+    height: 100vh;
+    position: fixed;
+    max-width: 120rem;
+    width: 100%;
+}
+.bg-light{
+    background-image: url("../../Image/BG-Light.png");
+    background-size: cover;
+}
+.bg-dark{
+    background-image: url("../../Image/BG-Dark.png");
+    background-size: cover;
+}
+
 .theme-light {
   --color-first: #EEEBDD;
   --color-second: #810000;
