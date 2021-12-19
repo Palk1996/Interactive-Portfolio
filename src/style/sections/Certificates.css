@@ -1,0 +1,51 @@
+.certificates-section{
+    max-height: 200vh;
+    max-width: 120rem;
+    width: cover;
+    height: 200vh;
+    padding: 0 10.41666666666667vw 0 19.79166666666667vw;
+    overflow: hidden;
+    font-family: 'Prompt', sans-serif;
+    color: var(--font-color);
+}
+.wrap-certificates-content{
+    text-align: center;
+    padding: 0 5.208333333333333vw;
+}
+.cer-pic{
+    width: 18.48958333333333vw;
+    margin-top: 2.604166666666667vw;
+    border: 2px solid var(--color-fourth);
+}
+.wrap-pic{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.title{
+    margin-top: 2.604166666666667vw;
+}
+
+@media only screen and (max-width: 768px){
+    .certificates-section{
+        overflow: hidden;
+        padding: 10.18229166666667vw 0 0 0;
+        font-family: 'Prompt', sans-serif;
+        color: var(--font-color);
+    }
+    .wrap-certificates-content{
+        text-align: center;
+        padding: 10vh 5vh 0 5vh;
+        margin: 0 auto;
+    }
+    .title{
+        font-size: 3.255208333333333vw;
+    }
+    .wrap-pic{
+        flex-direction: column;
+    }
+    .cer-pic{
+        width: 19vh;
+    }
+}

@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
+.profile-section{
+    max-height: 100vh;
+    max-width: 120rem;
+    width: cover;
+    height: 100vh;
+    padding: 0 10.41666666666667vw 0 19.79166666666667vw;
+    overflow: hidden;
+    font-family: 'Prompt', sans-serif;
+    color: var(--font-color);
+}
+.wrap-profile-content{
+    text-align: center;
+    padding: 0px 10.41666666666667vw 0 10.41666666666667vw;
+}
+.size_pic{
+    width: 15vw;
+    margin: 2.604166666666667vw 0 1vw 0;
+}
+.details{
+    font-size: 1.302083333333333vw;
+    text-align: left;
+}
+.title{
+    margin-top: 2.604166666666667vw;
+    font-size: 1.302083333333333vw;
+}
+@media only screen and (max-width: 768px){
+    .profile-section{
+        padding: 10.18229166666667vw 0 0 0;
+        overflow: hidden;
+        font-family: 'Prompt', sans-serif;
+        color: var(--font-color);
+    }
+    .wrap-profile-content{
+        text-align: center;
+        padding: 10vh 5vh 0 5vh;
+    }
+    .size_pic{
+        width: 32.55208333333333vw;
+        margin: 3.255208333333333vw;
+    }
+    .details{
+        font-size: 1.5vh;
+        text-align: left;
+    }
+    .title{
+        margin-top: 5.859375vh;
+        font-size: 3.255208333333333vh;
+    }
+}
