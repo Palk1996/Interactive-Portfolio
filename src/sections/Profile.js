@@ -8,8 +8,8 @@ function Profile() {
     const darkMode = theme.state.darkMode;
     return (
         <Container id="profile" className={darkMode ? "profile-section bg-light theme-light" : "profile-section bg-dark theme-dark"}>
-            <div className="wrap-profile-content title">
-                <h1>Profile</h1>
+            <div className="wrap-profile-content">
+                <h1 className='title'>Profile</h1>
                 <div>
                     <img className='size_pic' src={my_pic} alt="my pic" />
                     <p className='details'>

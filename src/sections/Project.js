@@ -9,7 +9,7 @@ export default function Project() {
     const darkMode = theme.state.darkMode;
     return (
         <Container id="project" className={darkMode ? "project-section bg-light theme-light" : "project-section bg-dark theme-dark"}>
-            <div className="wrap-project-content title"><h1>Project</h1>
+            <div className="wrap-project-content"><h1 className='title'>Project</h1>
                 <Col sm className="wrap-project">
                     <div className="card">
                         <img src={Project_img} alt="Thumbnail" className="thumbnail" />

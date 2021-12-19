@@ -23,7 +23,7 @@
 }
 .title{
     margin-top: 2.604166666666667vw;
-    font-size: 1.302083333333333vw;
+    font-size: 2.75vw;
 }
 @media only screen and (max-width: 768px){
     .profile-section{
@@ -37,15 +37,15 @@
         padding: 10vh 5vh 0 5vh;
     }
     .size_pic{
-        width: 32.55208333333333vw;
+        width: 30vh;
         margin: 3.255208333333333vw;
     }
     .details{
-        font-size: 1.5vh;
+        font-size: 1.75vh;
         text-align: left;
     }
     .title{
-        margin-top: 5.859375vh;
+        margin-top: 1vw;
         font-size: 3.255208333333333vh;
     }
 }

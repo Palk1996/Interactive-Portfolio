@@ -26,9 +26,6 @@
     flex-direction: row;
     justify-content: space-around;
 }
-.skill-title{
-    margin-top: 2.604166666666667vw;
-}
 
 @media only screen and (max-width: 768px){
     .skill-section{

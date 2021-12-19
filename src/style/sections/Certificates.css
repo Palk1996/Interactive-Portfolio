@@ -23,9 +23,6 @@
     align-items: center;
     justify-content: space-evenly;
 }
-.title{
-    margin-top: 2.604166666666667vw;
-}
 
 @media only screen and (max-width: 768px){
     .certificates-section{
@@ -38,9 +35,6 @@
         text-align: center;
         padding: 10vh 5vh 0 5vh;
         margin: 0 auto;
-    }
-    .title{
-        font-size: 3.255208333333333vw;
     }
     .wrap-pic{
         flex-direction: column;

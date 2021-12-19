@@ -15,14 +15,10 @@
 .wrap-project{
     margin-top: 2.604166666666667vw;
 }
-.title{
-  margin-top: 2.604166666666667vw;
-  font-size: 1.302083333333333vw;
-}
 .card {
     margin: 0 auto;
-    width: 25vw;
-    padding: 0 0.8333333333333333vw;
+    width: 30vw;
+    padding: 0 0.8333333333333333vw 0.8333333333333333vw;
     border-radius: 2rem;
     background-color: var(--font-color);
   }
@@ -51,12 +47,15 @@
   }
 .project-title{
     color: var(--font-color);
+    font-size: 2.5vh;
 }
 .project-title-light{
     color: #fff;
+    font-size: 2.5vh;
 }
 .project-title-dark{
     color: #1b1717;
+    font-size: 2.5vh;
 }
   .card > .thumbnail {
     width: 100%;
@@ -72,7 +71,7 @@
   
   .card > .content .date {
     opacity: 0.8;
-    font-size: 0.6666666666666667vw;
+    font-size: 1vw;
     margin-top: -0.4166666666666667vw;
     margin-bottom: 0.4166666666666667vw;
   }
@@ -104,15 +103,15 @@
           display: flex;
           justify-content: center;
           align-items: center;
-          margin-top: 10vh;
+          margin-top: 5vw;
       }
       .ProjectContent-container {
           margin-top: 10vh;
         }
         .card {
           margin: 0 auto;
-          width: 40vw;
-          padding: 0 0.8333333333333333vw;
+          width: 60vw;
+          padding: 0 0.8333333333333333vw 0.8333333333333333vw;
           border-radius: 1.666666666666667vh;
           background-color: var(--font-color);
         }
@@ -134,4 +133,16 @@
         transition: all 300ms ease-in-out;
         object-fit: cover;
       }
+    .project-title{
+      color: var(--font-color);
+      font-size: 3vh;
+  }
+  .project-title-light{
+      color: #fff;
+      font-size: 3vh;
+  }
+  .project-title-dark{
+      color: #1b1717;
+      font-size: 3vh;
+  }
   }

@@ -42,7 +42,7 @@ export default function Certificates() {
     ]
     return (
             <Container id="certificates" className={darkMode ? "certificates-section bg-large-light theme-light" : "certificates-section bg-large-dark theme-dark"}>
-                <div className="wrap-certificates-content title"><h1>Certificates</h1>
+                <div className="wrap-certificates-content"><h1 className='title'>Certificates</h1>
                     <div className="wrap-pic">
                         {
                             certificates1.map((value, index) => {

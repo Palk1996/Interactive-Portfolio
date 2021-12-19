@@ -12,8 +12,7 @@ export default function Skill() {
     const darkMode = theme.state.darkMode;
     return (
         <Container id="skill" className={darkMode ? "skill-section bg-light theme-light" : "skill-section bg-dark theme-dark"}>
-            <div className="wrap-skill-content title">
-                <h1>Skill</h1>
+            <div className="wrap-skill-content"><h1 className='title'>Skill</h1>
             <Row className="skill-content">
                 <Col sm><img className="skill-pic-1" src={darkMode ? BeginnerSkillLight : BeginnerSkillDark}/></Col>
                 <Col sm><img className="skill-pic-2" src={darkMode ? IntermediateSkillLight : IntermediateSkillDark}/></Col>
